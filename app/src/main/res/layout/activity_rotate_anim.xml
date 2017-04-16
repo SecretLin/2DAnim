@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.secret.a2danim.RotateAnimActivity">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/iv"
+        android:src="@mipmap/head"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="92dp" />
+    <Button
+        android:id="@+id/accelerate_decelerate_interpolator"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="accelerate_decelerate_interpolator"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="192dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="302dp" />
+
+    <Button
+        android:id="@+id/accelerate_interpolator"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="accelerate_interpolator"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/anticipate_overshoot_interpolator"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="anticipate_overshoot_interpolator"
+        android:layout_alignBaseline="@+id/accelerate_interpolator"
+        android:layout_alignBottom="@+id/accelerate_interpolator"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp" />
+
+    <Button
+        android:id="@+id/bounce_interpolator"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/accelerate_decelerate_interpolator"
+        android:layout_marginTop="33dp"
+        android:text="bounce_interpolator" />
+
+    <Button
+        android:id="@+id/decelerate_interpolator"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/accelerate_interpolator"
+        android:layout_alignTop="@+id/bounce_interpolator"
+        android:layout_marginStart="13dp"
+        android:text="decelerate_interpolator" />
+
+    <Button
+        android:id="@+id/anticipate_interpolator"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/decelerate_interpolator"
+        android:text="anticipate_interpolator" />
+
+    <Button
+        android:id="@+id/cycle_interpolator"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:text="cycle_interpolator" />
+
+    <Button
+        android:id="@+id/linear_interpolator"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/decelerate_interpolator"
+        android:layout_alignTop="@+id/cycle_interpolator"
+        android:text="linear_interpolator" />
+
+    <Button
+        android:id="@+id/overshoot_interpolator"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="overshoot_interpolator"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
